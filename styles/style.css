@@ -253,7 +253,6 @@ ul li:nth-child(4) a {
 }
 .arrowe-container {
   text-align: center;
-  
 }
 .arrow-img img {
   width: 50px;
@@ -261,7 +260,7 @@ ul li:nth-child(4) a {
   border-radius: 50px;
   padding: 20px;
   margin-top: 100px;
-} 
+}
 
 @media screen and (max-width: 576px) {
   .card-container {
@@ -272,7 +271,101 @@ ul li:nth-child(4) a {
     padding: 0 20px;
     gap: 15px;
   }
-  .arrowe-container{
+  .arrowe-container {
     display: none;
+  }
+}
+
+/* Our stories section*/
+.our-stories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+  padding-top: 50px;
+  background: url(/images/bg.png),
+    linear-gradient(
+      0deg,
+      rgba(1, 254, 56, 0.123),
+      rgba(255, 255, 255, 0.137) 100%
+    );
+}
+
+.story-card img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.our-stories-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+.large-card button{
+  border-radius: 47.93px;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  border: none;
+  padding: 10px 20px;
+  background: rgb(155, 60, 232);
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 54.5%;
+}
+.four-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+}
+
+.story-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.story-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.35px;
+  padding: 30px 20px;
+}
+.story-card p {
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  padding: 0 35px 35px 30px;
+}
+.four-card-small button {
+  border-radius: 47.93px;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  border: none;
+  padding: 10px 20px;
+  background: rgb(155, 60, 232);
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 50.5%;
+}
+
+@media screen and (max-width: 576px) {
+  .large-card {
+    display: none;
+  }
+  .our-stories-cards {
+    display: block;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  .four-card-small button {
+    font-size: 14.34px;
+    padding: 5px 15px;
+    left: 10%;
+    top: 40.5%;
   }
 }
