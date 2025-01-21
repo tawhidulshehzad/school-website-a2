@@ -10,8 +10,7 @@
 body {
   width: 1320px;
   margin: 0 auto;
-  /* background-color: #f7f7f7; */
-  background-color: #ececec;
+  background-color: #e9e9e9;
 }
 
 .btn-primary {
@@ -39,6 +38,7 @@ ul {
   align-items: center;
 }
 nav {
+  padding: 50px 0;
   display: flex;
   position: relative;
 }
@@ -277,13 +277,15 @@ ul li:nth-child(4) a {
 }
 
 /* Our stories section*/
+
 .our-stories-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   margin-top: 40px;
-  padding-top: 50px;
+  padding: 50px 0;
+
   background: url(/images/bg.png),
     linear-gradient(
       0deg,
@@ -302,7 +304,7 @@ ul li:nth-child(4) a {
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
 }
-.large-card button{
+.large-card button {
   border-radius: 47.93px;
   font-size: 15.34px;
   font-weight: 500;
@@ -367,5 +369,32 @@ ul li:nth-child(4) a {
     padding: 5px 15px;
     left: 10%;
     top: 40.5%;
+  }
+}
+/* .............
+footer
+............. */
+
+.footer-section {
+  background-color: #b9acf5;
+  padding: 100px 50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socond-column li {
+  list-style: none;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 576px) {
+  .footer-section {
+    flex-direction: column;
+    padding-left: 50px;
+    gap: 40px;
   }
 }
