@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff&family=Fira+Code:wght@300..700&family=Fira+Sans+Condensed&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@400;500;600&family=Poppins:wght@400;500;600&family=Quicksand:wght@300..700&family=Roboto:wght@700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: quicksand;
+}
+
+/* ------ Shared Styles -------------*/
+body {
+  width: 1420px;
+  margin: 0 auto;
+}
+.all-bg {
+  /* background-color: #f7f7f7; */
+  background-color: #ccc;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  border-radius: 5px;
+  color: #fef9e1;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  background-color: #a31d1d;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #e5d0ac;
+  color: #a31d1d;
+  border: 1px solid #a31d1d;
+}
+
+/* ------ Nav Bar -------------*/
+.nav-log-and-text,
+ul {
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+}
+.nav-bar li a {
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.nav-bar li a:hover {
+  text-decoration: underline;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar li {
+  list-style: none;
+  padding-right: 70px;
+}
+ul li:first-child a {
+  color: #ff0707;
+}
+
+ul li:nth-child(2) a {
+  color: #007bff;
+}
+ul li:nth-child(3) a {
+  color: #28a745;
+}
+
+ul li:nth-child(4) a {
+  color: #232422;
+}
+
+/*--------- Nav for mobiel ----------------*/
+
+@media screen and (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+  .nav-log-and-text h2,
+  nav,
+  .btn-primary {
+    display: none;
+  }
+  header {
+    
+    border: 1px solid #cf2a2a;
+  }
+}
