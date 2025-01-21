@@ -90,8 +90,8 @@ ul li:nth-child(4) a {
     margin: 0 auto;
   }
   .nav-log-and-text h2,
-  ul,
-  .btn-primary {
+  .nav-bar button,
+  ul {
     display: none;
   }
 
@@ -137,13 +137,13 @@ ul li:nth-child(4) a {
   width: 100%;
 }
 .banner-container h1 {
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 61px;
 }
 .banner-container p {
   color: rgb(17, 17, 17);
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 25px;
   padding: 20px 0;
@@ -163,7 +163,91 @@ ul li:nth-child(4) a {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .banner-kids img{
-    width: 80%;
+  .banner-container h1 {
+    font-size: 3rem;
   }
+  .banner-container p {
+    font-size: 1.2rem;
+    padding: 20px 50px;
+  }
+  .banner-kids img {
+    width: 95%;
+  }
+}
+
+/* --------Standards Curriculum --------*/
+.standard-section {
+  background-image: url(/images/bg.png);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.card {
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+.card p {
+  width: 350px;
+}
+.card button {
+  border: none;
+  background-color: transparent;
+  font-family: Quicksand;
+  font-size: 15.09px;
+  font-weight: 700;
+  line-height: 28.3px;
+}
+.btn-1 button {
+  color: rgb(247, 56, 56)
+}
+.btn-2 button {
+  color: rgb(56, 247, 56)
+}
+.btn-3 button {
+  color: rgb(113, 56, 247)
+}
+
+.card-1 {
+  background: linear-gradient(
+      180deg,
+      rgb(255, 224, 222),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.card-2 {
+  background: linear-gradient(
+      180deg,
+      rgb(222, 255, 230),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.card-3 {
+  background: linear-gradient(
+      180deg,
+      rgb(255, 252, 222),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.standard-section h2 {
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  padding: 70px 0;
 }
