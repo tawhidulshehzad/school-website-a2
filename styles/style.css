@@ -209,13 +209,13 @@ ul li:nth-child(4) a {
   line-height: 28.3px;
 }
 .btn-1 button {
-  color: rgb(247, 56, 56)
+  color: rgb(247, 56, 56);
 }
 .btn-2 button {
-  color: rgb(56, 247, 56)
+  color: rgb(56, 247, 56);
 }
 .btn-3 button {
-  color: rgb(113, 56, 247)
+  color: rgb(113, 56, 247);
 }
 
 .card-1 {
@@ -250,4 +250,29 @@ ul li:nth-child(4) a {
   font-weight: 700;
   line-height: 57.5px;
   padding: 70px 0;
+}
+.arrowe-container {
+  text-align: center;
+  
+}
+.arrow-img img {
+  width: 50px;
+  background-color: #a31d1d;
+  border-radius: 50px;
+  padding: 20px;
+  margin-top: 100px;
+} 
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    gap: 15px;
+  }
+  .arrowe-container{
+    display: none;
+  }
 }
