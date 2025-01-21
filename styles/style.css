@@ -8,7 +8,7 @@
 
 /* ------ Shared Styles -------------*/
 body {
-  width: 1420px;
+  width: 1320px;
   margin: 0 auto;
 }
 .all-bg {
@@ -42,6 +42,7 @@ ul {
 }
 nav {
   display: flex;
+  position: relative;
 }
 .nav-bar li a {
   text-decoration: none;
@@ -57,6 +58,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+nav img {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 .nav-bar li {
   list-style: none;
@@ -82,14 +89,42 @@ ul li:nth-child(4) a {
 @media screen and (max-width: 576px) {
   body {
     width: 100%;
+    margin: 0 auto;
   }
   .nav-log-and-text h2,
-  nav,
+  ul,
   .btn-primary {
     display: none;
   }
-  header {
-    
-    border: 1px solid #cf2a2a;
+
+  ul {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  nav img {
+    display: block;
+    padding-left: 260px;
+  }
+  nav img:hover + ul {
+    display: flex;
+  }
+  .nav-bar {
+    border: 2px solid #2d0ddf;
+    display: flex;
+    justify-content: space-between;
   }
 }
