@@ -10,10 +10,8 @@
 body {
   width: 1320px;
   margin: 0 auto;
-}
-.all-bg {
   /* background-color: #f7f7f7; */
-  background-color: #ccc;
+  background-color: #ececec;
 }
 
 .btn-primary {
@@ -126,5 +124,46 @@ ul li:nth-child(4) a {
     border: 2px solid #2d0ddf;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+/* ---------bannar section --------------------*/
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-kids img {
+  width: 100%;
+}
+.banner-container h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+}
+.banner-container p {
+  color: rgb(17, 17, 17);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 20px 0;
+}
+
+.h1-color-one {
+  color: #a31d1d;
+}
+.h1-color-two {
+  color: #431eec;
+}
+
+/* ---------bannar section mobile--------------------*/
+
+@media screen and (max-width: 576px) {
+  .banner-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner-kids img{
+    width: 80%;
   }
 }
