@@ -178,7 +178,7 @@ ul li:nth-child(4) a {
 
 /* --------Standards Curriculum --------*/
 .standard-section {
-  background-image: url("/images/bg.png");
+  background-image: url("../images/bg.png");
 }
 
 .card-container {
