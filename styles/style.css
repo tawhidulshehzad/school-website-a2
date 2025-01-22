@@ -378,15 +378,23 @@ footer
 ............. */
 
 .footer-section {
-  background-color: #b9acf5;
+  background-color: #72679e;
   padding: 100px 50px;
 
   display: flex;
   justify-content: space-between;
 }
+.first-column p {
+  padding: 20px 0;
+  line-height: 20px;
+  color: #fff;
+}
 
-.footer-socond-column li {
+.footer-socond-column li,
+h4 {
   list-style: none;
+  color: #fff;
+  padding: 10px 0;
 }
 .footer-logo {
   display: flex;
