@@ -410,10 +410,10 @@ h4 {
 }
 
 .marquee {
-  width: 100%; /* Full-width of the screen */
-  overflow: hidden; /* Hides the content outside the container */
-  white-space: nowrap; /* Prevents text from wrapping to the next line */
-  box-sizing: border-box; /* Includes padding and borders in width */
+  width: 100%; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  box-sizing: border-box; 
 }
 
 .marquee p {
