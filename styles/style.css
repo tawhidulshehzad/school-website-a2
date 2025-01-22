@@ -90,20 +90,12 @@ ul li:nth-child(4) a {
     margin: 0 auto;
   }
   .nav-log-and-text h2,
-  .nav-bar button,
-  ul {
+  .nav-bar button {
     display: none;
   }
 
   ul {
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    border-radius: 5px;
+    display: none;
   }
   ul li {
     margin-bottom: 10px;
@@ -118,7 +110,14 @@ ul li:nth-child(4) a {
     padding-right: 10px;
   }
   .bamburger-manu-img:hover ul {
-    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
   }
   .nav-bar {
     border-bottom: 3px solid #a3591d;
@@ -179,7 +178,7 @@ ul li:nth-child(4) a {
 
 /* --------Standards Curriculum --------*/
 .standard-section {
-  background-image: url(/images/bg.png);
+  background-image: url("/images/bg.png");
 }
 
 .card-container {
