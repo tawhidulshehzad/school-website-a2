@@ -57,7 +57,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-nav img {
+.hamburger-menu-img {
   display: none;
   width: 30px;
   height: 30px;
@@ -113,15 +113,15 @@ ul li:nth-child(4) a {
     margin-bottom: 0;
   }
 
-  nav img {
+  .hamburger-menu-img {
     display: block;
-    padding-left: 260px;
+    padding-right: 10px;
   }
-  nav img:hover + ul {
+  .bamburger-manu-img:hover ul {
     display: flex;
   }
   .nav-bar {
-    border: 2px solid #2d0ddf;
+    border-bottom: 3px solid #a3591d;
     display: flex;
     justify-content: space-between;
   }
@@ -164,11 +164,13 @@ ul li:nth-child(4) a {
     text-align: center;
   }
   .banner-container h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 45px;
+    padding-top: 20px;
   }
   .banner-container p {
     font-size: 1.2rem;
-    padding: 20px 50px;
+    padding: 20px 30px;
   }
   .banner-kids img {
     width: 95%;
@@ -396,5 +398,28 @@ footer
     flex-direction: column;
     padding-left: 50px;
     gap: 40px;
+  }
+}
+
+.marquee {
+  width: 100%; /* Full-width of the screen */
+  overflow: hidden; /* Hides the content outside the container */
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  box-sizing: border-box; /* Includes padding and borders in width */
+}
+
+.marquee p {
+  padding-left: 100%;
+  animation: marquee-start 10s linear infinite;
+  font-size: 30px;
+  display: inline-block;
+}
+
+@keyframes marquee-start {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
